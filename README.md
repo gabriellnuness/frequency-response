@@ -1,6 +1,8 @@
 # Frequency Response
 
-This LabVIEW code is used to automate and obtain a frequency response of any given actuator.
+* Before running the program go to Tools/Options/Front panel and disable the option "Use localized decimal point*". Otherwise, LabVIEW will consider "," instead of "." depending on Windows language.
+
+This LabVIEW code (version 2018) is used to automate and obtain a frequency response of any given actuator.
 
 The input signal (frequency and amplitude) is controlled by the Function generator HP 33120A.
 The output signal is acquired by the Digital Oscilloscope Agilent MSO6034A.
