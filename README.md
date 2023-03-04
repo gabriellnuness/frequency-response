@@ -14,6 +14,6 @@ It was limited to have a total harmonic distortion (THD) of 3%, since the freque
 
 * Before running the program go to Tools/Options/Front panel and disable the option "Use localized decimal point*". Otherwise, LabVIEW will consider "," instead of "." depending on Windows language.
 
-This LabVIEW code (version 2018) is used to automate and obtain a frequency response of any given actuator.
+This LabVIEW code (version 2021) is used to automate and obtain a frequency response of any given actuator.
 
 The communication is made via GPIB, the function generator and oscilloscope can be changed to other models by checking the user manual and replacing the commands.   

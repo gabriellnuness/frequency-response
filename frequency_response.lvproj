@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="18008000">
+<Project Type="Project" LVVersion="21008000">
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -91,7 +91,6 @@
 			<Item Name="Agilent 6000 Series.lvproj" Type="Document" URL="../Agilent 6000 Series/Agilent 6000 Series.lvproj"/>
 		</Item>
 		<Item Name="VIs" Type="Folder">
-			<Item Name="FrequencyResponse_v1.5.vi" Type="VI" URL="../VIs/FrequencyResponse_v1.5.vi"/>
 			<Item Name="Icon_Exe.ico" Type="Document" URL="../VIs/Icon_Exe.ico"/>
 			<Item Name="Initiate_channel1.vi" Type="VI" URL="../VIs/Initiate_channel1.vi"/>
 			<Item Name="Read Single Waveform channel 1.vi" Type="VI" URL="../VIs/Read Single Waveform channel 1.vi"/>
@@ -102,6 +101,7 @@
 			<Item Name="SubVI_SaveWaveform.vi" Type="VI" URL="../VIs/SubVI_SaveWaveform.vi"/>
 			<Item Name="SubVI_THD.vi" Type="VI" URL="../VIs/SubVI_THD.vi"/>
 		</Item>
+		<Item Name="main.vi" Type="VI" URL="../VIs/main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Acquisition Status.vi" Type="VI" URL="/&lt;instrlib&gt;/Agilent 6000 Series/Public/Data/Low Data VIs/Acquisition Status.vi"/>
@@ -333,8 +333,6 @@
 				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
 				<Item Name="I128 Timestamp.ctl" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/I128 Timestamp.ctl"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
-				<Item Name="LV70DateRecToTimeStamp.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70DateRecToTimeStamp.vi"/>
-				<Item Name="LV70TimeStampToDateRec.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70TimeStampToDateRec.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
@@ -405,34 +403,31 @@
 				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
 				<Property Name="DestinationCount" Type="Int">1</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{FEB8324C-1913-4673-9B2E-89F3D074E0BD}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2018</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{E03393F5-3472-4F98-9841-E1E2798FAA12}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2021 SP1 f2</Property>
 				<Property Name="DistPart[0].SoftDep[0].exclude" Type="Bool">false</Property>
 				<Property Name="DistPart[0].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
 				<Property Name="DistPart[0].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
 				<Property Name="DistPart[0].SoftDep[1].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[1].productName" Type="Str">Math Kernel Libraries 2017</Property>
-				<Property Name="DistPart[0].SoftDep[1].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
+				<Property Name="DistPart[0].SoftDep[1].productName" Type="Str">NI Deployment Framework 2021</Property>
+				<Property Name="DistPart[0].SoftDep[1].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
 				<Property Name="DistPart[0].SoftDep[2].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[2].productName" Type="Str">NI Logos 18.0</Property>
+				<Property Name="DistPart[0].SoftDep[2].productName" Type="Str">NI Logos 21.0</Property>
 				<Property Name="DistPart[0].SoftDep[2].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
 				<Property Name="DistPart[0].SoftDep[3].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[3].productName" Type="Str">NI TDM Streaming 18.0</Property>
-				<Property Name="DistPart[0].SoftDep[3].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
+				<Property Name="DistPart[0].SoftDep[3].productName" Type="Str">NI mDNS Responder 21.5</Property>
+				<Property Name="DistPart[0].SoftDep[3].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
 				<Property Name="DistPart[0].SoftDep[4].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[4].productName" Type="Str">NI VC2010MSMs</Property>
-				<Property Name="DistPart[0].SoftDep[4].upgradeCode" Type="Str">{EFBA6F9E-F934-4BD7-AC51-60CCA480489C}</Property>
+				<Property Name="DistPart[0].SoftDep[4].productName" Type="Str">Math Kernel Libraries 2017</Property>
+				<Property Name="DistPart[0].SoftDep[4].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
 				<Property Name="DistPart[0].SoftDep[5].exclude" Type="Bool">false</Property>
 				<Property Name="DistPart[0].SoftDep[5].productName" Type="Str">NI VC2015 Runtime</Property>
 				<Property Name="DistPart[0].SoftDep[5].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
 				<Property Name="DistPart[0].SoftDep[6].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[6].productName" Type="Str">NI mDNS Responder 17.0</Property>
-				<Property Name="DistPart[0].SoftDep[6].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
-				<Property Name="DistPart[0].SoftDep[7].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[7].productName" Type="Str">NI Deployment Framework 2018</Property>
-				<Property Name="DistPart[0].SoftDep[7].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
-				<Property Name="DistPart[0].SoftDepCount" Type="Int">8</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{3B195EBF-4A09-46E6-8EAD-931568C1344C}</Property>
+				<Property Name="DistPart[0].SoftDep[6].productName" Type="Str">NI TDM Streaming 21.1</Property>
+				<Property Name="DistPart[0].SoftDep[6].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
+				<Property Name="DistPart[0].SoftDepCount" Type="Int">7</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{251E8668-4013-3671-857C-61D46B2AC827}</Property>
 				<Property Name="DistPartCount" Type="Int">1</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
 				<Property Name="INST_buildLocation" Type="Path">../Installer</Property>
@@ -442,7 +437,7 @@
 				<Property Name="INST_productName" Type="Str">Installer_RespFreqv1.3</Property>
 				<Property Name="INST_productVersion" Type="Str">1.0.2</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">18008007</Property>
+				<Property Name="InstSpecVersion" Type="Str">21008000</Property>
 				<Property Name="MSI_distID" Type="Str">{990315A8-92A4-4BD7-8427-4CB16CEF768C}</Property>
 				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
 				<Property Name="MSI_osCheck" Type="Int">0</Property>
@@ -473,6 +468,7 @@
 				<Property Name="App_INI_aliasGUID" Type="Str">{68FF56A5-B045-4CCB-9C13-51C7F4821EF2}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{541DBB60-F0E1-4523-9188-95222BF629C9}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">1</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{2678A9B7-9C2B-4CBE-B300-B4E40B20F46F}</Property>
 				<Property Name="Bld_buildSpecDescription" Type="Str">Resposta em frequencia automação versão 1.3</Property>
